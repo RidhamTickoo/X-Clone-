@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home / X</title>
+  <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white">
+  <div class="flex md:container mx-auto my-4">
+    <!-- Sidebar -->
+    <div class="first w-16 md:w-[20%] flex flex-col items-center md:items-start gap-4 px-2 md:px-6">
+      <div class="text-3xl font-bold mb-4">X</div>
+      <div class="flex flex-col gap-4 text-xl">
+        <div class="flex gap-3 items-center hover:bg-gray-800 px-4 py-2 rounded-full cursor-pointer">
+          <span class="material-symbols-outlined">home</span>
+          <span class="hidden md:block">Home</span>
+        </div>
+        <div class="flex gap-3 items-center hover:bg-gray-800 px-4 py-2 rounded-full cursor-pointer">
+          <span class="material-symbols-outlined">search</span>
+          <span class="hidden md:block">Explore</span>
+        </div>
+        <div class="flex gap-3 items-center hover:bg-gray-800 px-4 py-2 rounded-full cursor-pointer">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="hidden md:block">Notifications</span>
+        </div>
+        <div class="flex gap-3 items-center hover:bg-gray-800 px-4 py-2 rounded-full cursor-pointer">
+          <span class="material-symbols-outlined">mail</span>
+          <span class="hidden md:block">Messages</span>
+        </div>
+        <div class="flex gap-3 items-center hover:bg-gray-800 px-4 py-2 rounded-full cursor-pointer">
+          <span class="material-symbols-outlined">person</span>
+          <span class="hidden md:block">Profile</span>
+        </div>
+      </div>
+      <button class="bg-blue-500 text-white px-6 py-2 rounded-full mt-4 hidden md:block font-bold">Post</button>
+    </div>
+
+    <!-- Main Feed -->
+    <div class="second w-full md:w-[50%] border border-x-white border-y-black p-4">
+      <!-- Top bar -->
+      <div class="flex justify-between font-bold text-lg">
+        <div class="border-b-4 border-blue-500 w-1/2 text-center pb-2">For you</div>
+        <div class="text-gray-500 w-1/2 text-center pb-2">Following</div>
+      </div>
+
+      <!-- Post input -->
+      <div class="flex gap-4 border-b border-gray-700 py-4">
+        <img class="w-12 h-12 rounded-full"
+          src="https://imgs.search.brave.com/fSTvdEFPPGAWeXrFdCDmD2bbYWs4LUq-UDeIO0Mi_Vs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wb3J0cmFpdC15/b3VuZy1ib3ktY2F1/Y2FzaWFuLXdvbWVu/LXdlYXJpbmctb3Jh/bmdlLXQtc2hpcnQt/c3RhbmRpbmctZ2Fy/ZGVuLXNwZW5kaW5n/LXRpbWUtYWxvbmUt/b3V0c2lkZS1jb25j/ZXB0XzEzMzM5LTMw/NzYzOS5qcGc_c2Vt/dD1haXNfaXRlbXNf/Ym9vc3RlZCZ3PTc0/MA" alt="User" />
+        <input type="text" placeholder="What is happening?!" class="bg-black text-white text-xl outline-none w-full" />
+      </div>
+
+      <!-- Icons and Post button -->
+      <div class="flex justify-between items-center border-b border-gray-700 py-2">
+        <div class="text-blue-500 flex gap-4">
+          <span class="material-symbols-outlined cursor-pointer">image</span>
+          <span class="material-symbols-outlined cursor-pointer">gif_box</span>
+          <span class="material-symbols-outlined cursor-pointer">poll</span>
+          <span class="material-symbols-outlined cursor-pointer">sentiment_satisfied</span>
+          <span class="material-symbols-outlined cursor-pointer">event</span>
+          <span class="material-symbols-outlined cursor-pointer">location_on</span>
+        </div>
+        <button class="bg-blue-500 text-white px-4 py-1 rounded-full font-bold">Post</button>
+      </div>
+
+      <!-- Example Tweet -->
+      <div class="flex gap-4 py-4 border-b border-gray-700">
+        <img class="w-12 h-12 rounded-full"
+          src="https://imgs.search.brave.com/fSTvdEFPPGAWeXrFdCDmD2bbYWs4LUq-UDeIO0Mi_Vs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wb3J0cmFpdC15/b3VuZy1ib3ktY2F1/Y2FzaWFuLXdvbWVu/LXdlYXJpbmctb3Jh/bmdlLXQtc2hpcnQt/c3RhbmRpbmctZ2Fy/ZGVuLXNwZW5kaW5n/LXRpbWUtYWxvbmUt/b3V0c2lkZS1jb25j/ZXB0XzEzMzM5LTMw/NzYzOS5qcGc_c2Vt/dD1haXNfaXRlbXNf/Ym9vc3RlZCZ3PTc0/MA" alt="User" />
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-bold">Rohan</span>
+            <span class="text-gray-500">@CodeWithRohan · 1h</span>
+          </div>
+          <p>Learning Tailwind CSS is fun and super productive!</p>
+          <div class="flex justify-between text-gray-500 mt-2 w-[90%]">
+            <span class="material-symbols-outlined cursor-pointer text-sm">chat_bubble</span>
+            <span class="material-symbols-outlined cursor-pointer text-sm">repeat</span>
+            <span class="material-symbols-outlined cursor-pointer text-sm">favorite</span>
+            <span class="material-symbols-outlined cursor-pointer text-sm">bar_chart</span>
+            <span class="material-symbols-outlined cursor-pointer text-sm">bookmark</span>
+            <span class="material-symbols-outlined cursor-pointer text-sm">share</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Section -->
+    <div class="third hidden md:block w-[30%] px-4">
+      <!-- Search bar -->
+      <div class="sticky top-0 bg-black py-2">
+        <input type="text" placeholder="Search"
+          class="w-full bg-[#16181c] text-white p-3 rounded-full outline-none" />
+      </div>
+
+      <!-- What's Happening -->
+      <div class="bg-[#16181c] rounded-xl mt-4">
+        <h2 class="text-xl font-bold p-3">What's happening</h2>
+        <div class="p-3 hover:bg-[#1e2024] cursor-pointer">
+          <p class="text-sm text-gray-500">Trending in India</p>
+          <p class="font-semibold">#OpenAI</p>
+          <p class="text-sm text-gray-500">12.4K posts</p>
+        </div>
+        <div class="p-3 hover:bg-[#1e2024] cursor-pointer">
+          <p class="text-sm text-gray-500">Technology · Trending</p>
+          <p class="font-semibold">ChatGPT-5</p>
+          <p class="text-sm text-gray-500">10.2K posts</p>
+        </div>
+        <div class="p-3 hover:bg-[#1e2024] cursor-pointer">
+          <p class="text-sm text-gray-500">Trending</p>
+          <p class="font-semibold">#TailwindCSS</p>
+          <p class="text-sm text-gray-500">8,200 posts</p>
+        </div>
+        <div class="text-blue-500 px-3 py-4 hover:underline cursor-pointer">Show more</div>
+      </div>
+
+      <!-- Who to follow -->
+      <div class="bg-[#16181c] rounded-xl mt-4">
+        <h2 class="text-xl font-bold p-3">Who to follow</h2>
+        <div class="flex items-center justify-between p-3 hover:bg-[#1e2024] cursor-pointer">
+          <div class="flex gap-3 items-center">
+            <img class="w-10 h-10 rounded-full"
+              src="https://pbs.twimg.com/profile_images/1522060025854066688/IZs_lylH_bigger.png" alt="Harry" />
+            <div>
+              <p class="font-semibold">CodeWithHarry</p>
+              <p class="text-sm text-gray-500">@CodeWithHarry</p>
+            </div>
+          </div>
+          <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-bold">Follow</button>
+        </div>
+        <div class="flex items-center justify-between p-3 hover:bg-[#1e2024] cursor-pointer">
+          <div class="flex gap-3 items-center">
+            <img class="w-10 h-10 rounded-full"
+              src="https://pbs.twimg.com/profile_images/1697299503198646273/GTnwCVUC_x96.jpg" alt="Elon" />
+            <div>
+              <p class="font-semibold">Elon Musk</p>
+              <p class="text-sm text-gray-500">@ElonMusk</p>
+            </div>
+          </div>
+          <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-bold">Follow</button>
+        </div>
+        <div class="text-blue-500 px-3 py-4 hover:underline cursor-pointer">Show more</div>
+      </div>
+
+      <!-- Footer -->
+      <div class="text-xs text-gray-500 mt-4 px-4 leading-6">
+        Terms of Service · Privacy Policy · Cookie Policy · Accessibility · Ads info · More · © 2025 X Corp.
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
